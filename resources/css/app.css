@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.separate {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
