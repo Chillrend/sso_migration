@@ -33,16 +33,38 @@
                              height="70" width="75">
                     </div>
                     <div class="md:ml-6 my-auto">
-                        <h1 class="text-3xl font-bold">SSO</h1>
+                        <h1 class="font-bold text-3xl font-bold">SSO</h1>
                         <h1 class="text-xl">Politeknik Negeri Jakarta</h1>
                     </div>
                 </div>
-                <h1 class="text-center text-xl">Sign in to your account
+
+                @if($errors->any())
+                    @foreach ($errors->all() as $error)
+                        <div class="flex p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50" role="alert">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 inline w-8 h-8 mr-3" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                            </svg>
+                            <span class="sr-only">Info</span>
+                            <div>
+                                {{$errors}}
+                            </div>
+                        </div>
+                    @endforeach
+                @endif
+
+
+                <h1 class="font-bold text-center text-xl">{{$title}}
                 </h1>
+                <p class="text-sm text-center">{{$message}}</p>
             </header>
             <main class="space-y-4">
                 {{ $slot }}
             </main>
+            <footer>
+                <p class="text-center text-gray-500 text-xs">
+                    {{__('migration.doNotRefresh')}}
+                </p>
+            </footer>
         </div>
         <div class="flex justify-around">
             <div class="relative" x-data="{open: false}">
