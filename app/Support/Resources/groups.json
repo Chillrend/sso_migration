@@ -1,0 +1,86 @@
+{
+    "groups": [
+        {
+            "name": "Administrator",
+            "path": "/Administrator",
+            "attributes": {
+                "description": "User super administrator Unit TI Politeknik Negeri Jakarta, memiliki full akses ke seluruh sistem",
+                "version": "1.0",
+                "short_unit_name": "UPATIK",
+                "unit_name": "Unit Pembantu Akademik Teknologi Informasi dan Komunikasi"
+            }
+        },
+        {
+            "name": "Alumni",
+            "path": "/Alumni",
+            "attributes": {
+                "description": "User alumni Politeknik Negeri Jakarta",
+                "version": "1.0",
+                "short_unit_name": "Alumni",
+                "unit_name": "Alumni"
+            }
+        },
+        {
+            "name": "Bagian dan Unit",
+            "path": "/Unit",
+            "attributes": {
+                "description": "Akun khusus bagian / unit, sebisa mungkin jangan dipakai karena hak akses tidak dapat diatur perorangan",
+                "version": "1.0",
+                "short_unit_name": "Unit",
+                "unit_name": "Unit"
+            }
+        },
+        {
+            "name": "Kegiatan, Kerjasama, atau Proyek",
+            "path": "/Kegiatan",
+            "attributes": {
+                "description": "Akun khusus untuk kegiatan, kerjasama, atau proyek sebisa mungkin jangan dipakai karena hak akses tidak dapat diatur perorangan",
+                "version": "1.0",
+                "short_unit_name": "Kegiatan",
+                "unit_name": "Kegiatan"
+            }
+        },
+        {
+            "name": "Mahasiswa",
+            "path": "/Mahasiswa",
+            "attributes": {
+                "description": "Akun mahasiswa",
+                "version": "1.0",
+                "short_unit_name": "Mhsw",
+                "unit_name": "Mahasiswa"
+            },
+            "sub_groups": [
+                {
+                    "name": "Administrasi Niaga",
+                    "path": "/Mahasiswa/Administrasi Niaga",
+                    "attributes": {
+                        "description": "Akun mahasiswa Administrasi Niaga",
+                        "version": "1.0",
+                        "short_unit_name": "AN",
+                        "unit_name": "Administrasi Niaga"
+                    }
+                },
+                {
+                    "name": "Akuntansi",
+                    "path": "/Mahasiswa/Akuntansi",
+                    "attributes": {
+                        "description": "Akun mahasiswa Akuntansi",
+                        "version": "1.0",
+                        "short_unit_name": "AK",
+                        "unit_name": "Akuntansi"
+                    }
+                },
+                {
+                    "name": "Teknik Elektro",
+                    "path": "/Mahasiswa/Elektro",
+                    "attributes": {
+                        "description": "Akun mahasiswa Teknik Elektro",
+                        "version": "1.0",
+                        "short_unit_name": "AK",
+                        "unit_name": "Akuntansi"
+                    }
+                }
+            ]
+        }
+    ]
+}
