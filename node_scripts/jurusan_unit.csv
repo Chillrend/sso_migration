@@ -1,21 +1,19 @@
-"name_long","name_short","description","unit","parent"
-"Administrasi Niaga","AN","Akun %s untuk Jurusan Administrasi Niaga","FALSE",
-"Akuntansi","AK","Akun %s untuk Jurusan Akuntansi","FALSE",
-"Teknik Elektro","TE","Akun %s untuk Jurusan Teknik Elektro","FALSE",
-"Teknik Grafika dan Penerbitan","TGP","Akun %s untuk Jurusan Teknik Grafika dan Penerbitan","FALSE",
-"Teknik Informatika dan Komputer","TIK","Akun %s untuk Jurusan Teknik Informatika dan Komputer","FALSE",
-"Teknik Mesin","TM","Akun %s untuk Jurusan Teknik Mesin","FALSE",
-"Teknik Sipil","TS","Akun %s untuk Jurusan Teknik Sipil","FALSE",
-"Direktorat","Direktorat","Akun Staff Gd. Direktorat","FALSE",
-"Direktur","Direktur","Akun direktur","FALSE","Direktorat"
-"Staff Direktur","Staff Direktur","Akun Staff direktur","FALSE","Direktur"
-"Wakil Direktur","WD","Akun wakil direktur","FALSE","Direktorat"
-"Staff Wakil Direktur","Staff WD","Akun Staff wakil direktur","FALSE","Wakil Direktur"
-"Bagian Kepegawaian","Kepegawaian","Akun staff untuk Bagian Kepegawaian","TRUE","Direktorat"
-"Bagian Keuangan","Keuangan","Akun staff untuk Bagian Keuangan","TRUE","Direktorat"
-"Bagian Akademik","Akademik","Akun staff untuk Bagian Akademik","TRUE","Direktorat"
-"Bagian Administrasi Umum","Staff Umum","Akun staff untuk Bagian Administrasi Umum","TRUE","Direktorat"
-"Bagian Kebersihan","Kebersihan","Akun staff untuk Bagian Kebersihan","TRUE","Direktorat"
-"Bagian Keamanan","Keamanan","Akun staff untuk Bagian Keamanan","TRUE","Direktorat"
-"Tamu","Tamu","Akun Tamu","FALSE",
-"Administrator","Administrator","User Super Administrator untuk Unit TI Politeknik Negeri Jakarta","FALSE",null
+name_long,name_short,description,unit,parent,jurusan
+Administrasi Niaga,AN,Akun %s untuk Jurusan Administrasi Niaga,FALSE,,TRUE
+Akuntansi,AK,Akun %s untuk Jurusan Akuntansi,FALSE,,TRUE
+Teknik Elektro,TE,Akun %s untuk Jurusan Teknik Elektro,FALSE,,TRUE
+Teknik Grafika dan Penerbitan,TGP,Akun %s untuk Jurusan Teknik Grafika dan Penerbitan,FALSE,,TRUE
+Teknik Informatika dan Komputer,TIK,Akun %s untuk Jurusan Teknik Informatika dan Komputer,FALSE,,TRUE
+Teknik Mesin,TM,Akun %s untuk Jurusan Teknik Mesin,FALSE,,TRUE
+Teknik Sipil,TS,Akun %s untuk Jurusan Teknik Sipil,FALSE,,TRUE
+Direktur,Direktur,Akun direktur,FALSE,Pimpinan,FALSE
+Staff Direktur,Staff Direktur,Akun Staff direktur,FALSE,Pimpinan,FALSE
+Wakil Direktur,WD,Akun wakil direktur,FALSE,Pimpinan,FALSE
+Staff Wakil Direktur,Staff WD,Akun Staff wakil direktur,FALSE,Pimpinan,FALSE
+Bagian Kepegawaian,Kepegawaian,Akun staff untuk Bagian Kepegawaian (Untuk Akses Aplikasi Khusus Kepegawaian),TRUE,Staf,FALSE
+Bagian Keuangan,Keuangan,Akun staff untuk Bagian Keuangan (Untuk Akses Aplikasi Khusus Keuangan),TRUE,Staf,FALSE
+Bagian Akademik,Akademik,Akun staff untuk Bagian Akademik (Untuk Akses Aplikasi Khusus Akademik),TRUE,Staf,FALSE
+Bagian Administrasi Umum,Staff Umum,Akun staff untuk Bagian Administrasi Umum,TRUE,Staf,FALSE
+Bagian Kebersihan,Kebersihan,Akun staff untuk Bagian Kebersihan,TRUE,Staf,FALSE
+Bagian Keamanan,Keamanan,Akun staff untuk Bagian Keamanan,TRUE,Staf,FALSE
+Bagian Administrasi Jurusan,Keamanan,Akun staff untuk Administrasi Jurusan,TRUE,Staf,FALSE
