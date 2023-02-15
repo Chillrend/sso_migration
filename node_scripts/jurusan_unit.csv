@@ -1,11 +1,11 @@
-name_long,name_short,description,unit,parent,jurusan
-Administrasi Niaga,AN,Akun %s untuk Jurusan Administrasi Niaga,FALSE,,TRUE
-Akuntansi,AK,Akun %s untuk Jurusan Akuntansi,FALSE,,TRUE
-Teknik Elektro,TE,Akun %s untuk Jurusan Teknik Elektro,FALSE,,TRUE
-Teknik Grafika dan Penerbitan,TGP,Akun %s untuk Jurusan Teknik Grafika dan Penerbitan,FALSE,,TRUE
-Teknik Informatika dan Komputer,TIK,Akun %s untuk Jurusan Teknik Informatika dan Komputer,FALSE,,TRUE
-Teknik Mesin,TM,Akun %s untuk Jurusan Teknik Mesin,FALSE,,TRUE
-Teknik Sipil,TS,Akun %s untuk Jurusan Teknik Sipil,FALSE,,TRUE
+name_long,name_short,description,unit,parents,jurusan
+Administrasi Niaga,AN,Akun {0} untuk Jurusan Administrasi Niaga,FALSE,,TRUE
+Akuntansi,AK,Akun {0} untuk Jurusan Akuntansi,FALSE,,TRUE
+Teknik Elektro,TE,Akun {0} untuk Jurusan Teknik Elektro,FALSE,,TRUE
+Teknik Grafika dan Penerbitan,TGP,Akun {0} untuk Jurusan Teknik Grafika dan Penerbitan,FALSE,,TRUE
+Teknik Informatika dan Komputer,TIK,Akun {0} untuk Jurusan Teknik Informatika dan Komputer,FALSE,,TRUE
+Teknik Mesin,TM,Akun {0} untuk Jurusan Teknik Mesin,FALSE,,TRUE
+Teknik Sipil,TS,Akun {0} untuk Jurusan Teknik Sipil,FALSE,,TRUE
 Direktur,Direktur,Akun direktur,FALSE,Pimpinan,FALSE
 Staff Direktur,Staff Direktur,Akun Staff direktur,FALSE,Pimpinan,FALSE
 Wakil Direktur,WD,Akun wakil direktur,FALSE,Pimpinan,FALSE
