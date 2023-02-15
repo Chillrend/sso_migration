@@ -8,9 +8,6 @@ const csvToObj = require('csv-to-js-parser').csvToObj;
 
 const data = fs.readFileSync('jurusan_unit.csv').toString();
 
-const KeycloakAdminClient = require("@keycloak/keycloak-admin-client");
-const kcClient = new KeycloakAdminClient();
-
 let org_units = csvToObj(data);
 
 let mahasiswa_groups = base_group.groups[0];
@@ -73,9 +70,6 @@ org_units.forEach((unit) => {
         }
         staf_groups.sub_groups.push(staf);
     }
-
-
-
 })
 
 const organization = [
@@ -84,21 +78,20 @@ const organization = [
     alumni_groups,
     pimpinan_groups,
     dosen_groups,
+    staf_groups,
     tamu_groups,
     admin_groups
 ]
-kcClient.setConfig({
-    realmName: "dev-sso"
-})
 
-(async() => {
-    await kcClient.auth({
-        username: "#",
-        password: "#",
-        grantType: "password",
-        clientId: "admin-cli"
-    })
+const final_object = {
+    groups: [
+        ...organization
+    ]
+}
 
-    const users = await kcClient.users.find();
-    console.log(JSON.stringify(users));
-})
+const json = JSON.stringify(final_object);
+fs.writeFile("groups.json", json, 'utf8', function (err,data) {
+    if(err){
+        console.log(err);
+    }
+});

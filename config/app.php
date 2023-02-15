@@ -82,7 +82,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'id',
 
     /*
     |--------------------------------------------------------------------------
@@ -96,6 +96,21 @@ return [
     */
 
     'fallback_locale' => 'en',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Keycloak Application Config
+    |--------------------------------------------------------------------------
+    |
+    | This is for setting up the keycloak instance we're trying to connect
+    |
+    */
+
+    'keycloak_client_id' => env('KC_CLIENT_ID', null),
+    'keycloak_username' => env('KC_USERNAME', null),
+    'keycloak_password' => env('KC_PASSWORD', null),
+    'keycloak_base_url' => env('KC_BASE_URL', null),
+    'keycloak_realms' => env('KC_REALMS', null),
 
     /*
     |--------------------------------------------------------------------------
