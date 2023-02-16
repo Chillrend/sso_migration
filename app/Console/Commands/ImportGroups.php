@@ -2,8 +2,12 @@
 
 namespace App\Console\Commands;
 
+use App\Http\Object\KCHelper;
 use App\Support\KeycloakInstance;
+use Fschmtt\Keycloak\Collection\GroupCollection;
+use Fschmtt\Keycloak\Representation\Group;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\File;
 
 class ImportGroups extends Command
 {
@@ -47,13 +51,22 @@ class ImportGroups extends Command
             ));
 
         $this->info('Connected to realm ' . config('app.keycloak_realms'));
+        $this->importGroupToKc();
+    }
 
-        $users = $keycloak->users()->all(config('app.keycloak_realms'));
+    public function importGroupToKc(){
+        $groups = File::get(base_path() . '/node_scripts/groups.json');
+        $raw = json_decode($groups);
 
-        $this->info(sprintf('Realm "%s" has the following users:%s', config('app.keycloak_realms'), PHP_EOL));
-        foreach ($users as $user) {
-            $this->info(sprintf('-> User "%s"%s', $user->getUsername(), PHP_EOL));
+        $groups = $raw->groups;
+
+        $iterableGroups = [];
+
+        foreach ($groups as $group) {
+            $iterableGroups[] = KCHelper::buildKcGroupRecursively($group);
         }
 
+        $GroupCollection = new GroupCollection($iterableGroups);
+        $this->info($GroupCollection->first()->jsonSerialize());
     }
 }
