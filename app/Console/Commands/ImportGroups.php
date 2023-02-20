@@ -5,7 +5,9 @@ namespace App\Console\Commands;
 use App\Http\Object\KCHelper;
 use App\Support\KeycloakInstance;
 use Fschmtt\Keycloak\Collection\GroupCollection;
+use Fschmtt\Keycloak\Keycloak;
 use Fschmtt\Keycloak\Representation\Group;
+use GuzzleHttp\Exception\ClientException;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 
@@ -30,6 +32,7 @@ class ImportGroups extends Command
      *
      * @return int
      */
+
     public function handle()
     {
 
@@ -51,22 +54,30 @@ class ImportGroups extends Command
             ));
 
         $this->info('Connected to realm ' . config('app.keycloak_realms'));
-        $this->importGroupToKc();
+        $this->importGroupToKc($keycloak);
     }
 
-    public function importGroupToKc(){
+    public function importGroupToKc(Keycloak $keycloak){
         $groups = File::get(base_path() . '/node_scripts/groups.json');
         $raw = json_decode($groups);
 
         $groups = $raw->groups;
 
-        $iterableGroups = [];
-
         foreach ($groups as $group) {
-            $iterableGroups[] = KCHelper::buildKcGroupRecursively($group);
+            $group_to_kc = KCHelper::buildKcGroupRecursively($group);
+            $this->info("Running Import on: " . $group_to_kc->getName());
+            try {
+                $keycloak->groups()->create(config('app.keycloak_realms'), $group_to_kc);
+            }catch (ClientException $e){
+                $this->error("Error: " . $e->getMessage() . " On : " . $group_to_kc->getName());
+            }
+
         }
 
-        $GroupCollection = new GroupCollection($iterableGroups);
-        $this->info($GroupCollection->first()->jsonSerialize());
+        $this->info('Done!');
+
+        $groups = $keycloak->groups()->all(config('app.keycloak_realms'));
+        $this->info(sprintf('Realm "%s" has the following groups:%s', config('app.keycloak_realms'), PHP_EOL));
+
     }
 }

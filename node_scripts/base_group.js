@@ -7,7 +7,7 @@ const groups = {
             name: "Mahasiswa",
             path: "/Mahasiswa",
             attributes: {
-                description: "Group Untuk Akun Mahasiswa",
+                descriptiones: "Group Untuk Akun Mahasiswa",
                 version: "1.0",
                 short_unit_name: "Mhsw",
                 unit_name: "Mahasiswa"
@@ -18,7 +18,7 @@ const groups = {
             name: "Alumni",
             path: "/Alumni",
             attributes: {
-                description: "Group Untuk Akun Alumni",
+                descriptiones: "Group Untuk Akun Alumni",
                 version: "1.0",
                 short_unit_name: "Alumni",
                 unit_name: "Alumni"
@@ -29,7 +29,7 @@ const groups = {
             name: "Dosen",
             path: "/Dosen",
             attributes: {
-                description: "Group Untuk Akun Dosen",
+                descriptiones: "Group Untuk Akun Dosen",
                 version: "1.0",
                 short_unit_name: "Dosen",
                 unit_name: "Dosen"
@@ -40,7 +40,7 @@ const groups = {
             name: "Staf",
             path: "/Staf",
             attributes: {
-                description: "Group Untuk Akun Staf",
+                descriptiones: "Group Untuk Akun Staf",
                 version: "1.0",
                 short_unit_name: "Staf",
                 unit_name: "Staf"
@@ -51,7 +51,7 @@ const groups = {
             name: "Pimpinan",
             path: "/Pimpinan",
             attributes: {
-                description: "Group Untuk Akun Pimpinan dan Staff nya",
+                descriptiones: "Group Untuk Akun Pimpinan dan Staff nya",
                 version: "1.0",
                 short_unit_name: "Pimpinan",
                 unit_name: "Pimpinan"
@@ -62,7 +62,7 @@ const groups = {
             name: "Tamu",
             path: "/Tamu",
             attributes: {
-                description: "Group Untuk Tamu",
+                descriptiones: "Group Untuk Tamu",
                 version: "1.0",
                 short_unit_name: "Tamu",
                 unit_name: "Tamu"
@@ -72,7 +72,7 @@ const groups = {
             name: "Administrator",
             path: "/Administrator",
             attributes: {
-                description: "Group Untuk Akun Administrator Unit TI Politeknik Negeri Jakarta",
+                descriptiones: "Group Untuk Akun Administrator Unit TI Politeknik Negeri Jakarta",
                 version: "1.0",
                 short_unit_name: "Admin",
                 unit_name: "Admin"

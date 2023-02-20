@@ -2,27 +2,37 @@
 
 namespace App\Http\Object;
 
+use Fschmtt\Keycloak\Collection\GroupCollection;
 use Fschmtt\Keycloak\Representation\Group;
+use Fschmtt\Keycloak\Type\Map;
 
 class KCHelper
 {
 
-    public static function buildKcGroupRecursively($groupObject){
+    public static function buildKcGroupRecursively($groupObject): Group
+    {
 
-        $subGroup = [];
+        $subGroupAppend = [];
 
         if(property_exists($groupObject, 'sub_groups')){
             foreach ($groupObject->sub_groups as $subGroup){
                 $group = self::buildKcGroupRecursively($subGroup);
-                array_push($group);
+                $subGroupAppend[] = $group;
             }
         }
 
+        $attributes = new Map([
+            "description" => $groupObject->attributes->descriptiones,
+            "version" => $groupObject->attributes->version,
+            "short_unit_name" => $groupObject->attributes->short_unit_name,
+            "unit_name" => $groupObject->attributes->unit_name
+        ]);
+
         return new Group(
-            attributes: $groupObject->attributes,
+            attributes: null,
             name: $groupObject->name,
             path: $groupObject->path,
-            subGroups: $subGroup,
+            subGroups: property_exists($groupObject, 'sub_groups') ? new GroupCollection($subGroupAppend) : null,
         );
     }
 

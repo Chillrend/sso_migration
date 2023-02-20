@@ -25,7 +25,7 @@ org_units.forEach((unit) => {
                 name: unit.name_long,
                 path: "/".concat(types).concat("/").concat(unit.name_long),
                 attributes: {
-                    description: format(unit.description, types),
+                    descriptiones: format(unit.description, types),
                     version: "1.0",
                     short_unit_name: unit.name_short,
                     unit_name: unit.name_long
@@ -50,7 +50,7 @@ org_units.forEach((unit) => {
             name: unit.name_long,
             path: pimpinan_groups.path.concat("/").concat(unit.name_long),
             attributes: {
-                description: unit.description,
+                descriptiones: unit.description,
                 version: "1.0",
                 short_unit_name: unit.name_short,
                 unit_name: unit.name_long
@@ -62,7 +62,7 @@ org_units.forEach((unit) => {
             name: unit.name_long,
             path: staf_groups.path.concat("/").concat(unit.name_long),
             attributes: {
-                description: unit.description,
+                descriptiones: unit.description,
                 version: "1.0",
                 short_unit_name: unit.name_short,
                 unit_name: unit.name_long
@@ -77,7 +77,6 @@ const organization = [
     dosen_groups,
     alumni_groups,
     pimpinan_groups,
-    dosen_groups,
     staf_groups,
     tamu_groups,
     admin_groups

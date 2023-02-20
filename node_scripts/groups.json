@@ -4,7 +4,7 @@
             "name": "Mahasiswa",
             "path": "/Mahasiswa",
             "attributes": {
-                "description": "Group Untuk Akun Mahasiswa",
+                "descriptiones": "Group Untuk Akun Mahasiswa",
                 "version": "1.0",
                 "short_unit_name": "Mhsw",
                 "unit_name": "Mahasiswa"
@@ -14,7 +14,7 @@
                     "name": "Administrasi Niaga",
                     "path": "/Mahasiswa/Administrasi Niaga",
                     "attributes": {
-                        "description": "Akun Mahasiswa untuk Jurusan Administrasi Niaga",
+                        "descriptiones": "Akun Mahasiswa untuk Jurusan Administrasi Niaga",
                         "version": "1.0",
                         "short_unit_name": "AN",
                         "unit_name": "Administrasi Niaga"
@@ -24,7 +24,7 @@
                     "name": "Akuntansi",
                     "path": "/Mahasiswa/Akuntansi",
                     "attributes": {
-                        "description": "Akun Mahasiswa untuk Jurusan Akuntansi",
+                        "descriptiones": "Akun Mahasiswa untuk Jurusan Akuntansi",
                         "version": "1.0",
                         "short_unit_name": "AK",
                         "unit_name": "Akuntansi"
@@ -34,7 +34,7 @@
                     "name": "Teknik Elektro",
                     "path": "/Mahasiswa/Teknik Elektro",
                     "attributes": {
-                        "description": "Akun Mahasiswa untuk Jurusan Teknik Elektro",
+                        "descriptiones": "Akun Mahasiswa untuk Jurusan Teknik Elektro",
                         "version": "1.0",
                         "short_unit_name": "TE",
                         "unit_name": "Teknik Elektro"
@@ -44,7 +44,7 @@
                     "name": "Teknik Grafika dan Penerbitan",
                     "path": "/Mahasiswa/Teknik Grafika dan Penerbitan",
                     "attributes": {
-                        "description": "Akun Mahasiswa untuk Jurusan Teknik Grafika dan Penerbitan",
+                        "descriptiones": "Akun Mahasiswa untuk Jurusan Teknik Grafika dan Penerbitan",
                         "version": "1.0",
                         "short_unit_name": "TGP",
                         "unit_name": "Teknik Grafika dan Penerbitan"
@@ -54,7 +54,7 @@
                     "name": "Teknik Informatika dan Komputer",
                     "path": "/Mahasiswa/Teknik Informatika dan Komputer",
                     "attributes": {
-                        "description": "Akun Mahasiswa untuk Jurusan Teknik Informatika dan Komputer",
+                        "descriptiones": "Akun Mahasiswa untuk Jurusan Teknik Informatika dan Komputer",
                         "version": "1.0",
                         "short_unit_name": "TIK",
                         "unit_name": "Teknik Informatika dan Komputer"
@@ -64,7 +64,7 @@
                     "name": "Teknik Mesin",
                     "path": "/Mahasiswa/Teknik Mesin",
                     "attributes": {
-                        "description": "Akun Mahasiswa untuk Jurusan Teknik Mesin",
+                        "descriptiones": "Akun Mahasiswa untuk Jurusan Teknik Mesin",
                         "version": "1.0",
                         "short_unit_name": "TM",
                         "unit_name": "Teknik Mesin"
@@ -74,7 +74,7 @@
                     "name": "Teknik Sipil",
                     "path": "/Mahasiswa/Teknik Sipil",
                     "attributes": {
-                        "description": "Akun Mahasiswa untuk Jurusan Teknik Sipil",
+                        "descriptiones": "Akun Mahasiswa untuk Jurusan Teknik Sipil",
                         "version": "1.0",
                         "short_unit_name": "TS",
                         "unit_name": "Teknik Sipil"
@@ -86,7 +86,7 @@
             "name": "Dosen",
             "path": "/Dosen",
             "attributes": {
-                "description": "Group Untuk Akun Dosen",
+                "descriptiones": "Group Untuk Akun Dosen",
                 "version": "1.0",
                 "short_unit_name": "Dosen",
                 "unit_name": "Dosen"
@@ -96,7 +96,7 @@
                     "name": "Administrasi Niaga",
                     "path": "/Dosen/Administrasi Niaga",
                     "attributes": {
-                        "description": "Akun Dosen untuk Jurusan Administrasi Niaga",
+                        "descriptiones": "Akun Dosen untuk Jurusan Administrasi Niaga",
                         "version": "1.0",
                         "short_unit_name": "AN",
                         "unit_name": "Administrasi Niaga"
@@ -106,7 +106,7 @@
                     "name": "Akuntansi",
                     "path": "/Dosen/Akuntansi",
                     "attributes": {
-                        "description": "Akun Dosen untuk Jurusan Akuntansi",
+                        "descriptiones": "Akun Dosen untuk Jurusan Akuntansi",
                         "version": "1.0",
                         "short_unit_name": "AK",
                         "unit_name": "Akuntansi"
@@ -116,7 +116,7 @@
                     "name": "Teknik Elektro",
                     "path": "/Dosen/Teknik Elektro",
                     "attributes": {
-                        "description": "Akun Dosen untuk Jurusan Teknik Elektro",
+                        "descriptiones": "Akun Dosen untuk Jurusan Teknik Elektro",
                         "version": "1.0",
                         "short_unit_name": "TE",
                         "unit_name": "Teknik Elektro"
@@ -126,7 +126,7 @@
                     "name": "Teknik Grafika dan Penerbitan",
                     "path": "/Dosen/Teknik Grafika dan Penerbitan",
                     "attributes": {
-                        "description": "Akun Dosen untuk Jurusan Teknik Grafika dan Penerbitan",
+                        "descriptiones": "Akun Dosen untuk Jurusan Teknik Grafika dan Penerbitan",
                         "version": "1.0",
                         "short_unit_name": "TGP",
                         "unit_name": "Teknik Grafika dan Penerbitan"
@@ -136,7 +136,7 @@
                     "name": "Teknik Informatika dan Komputer",
                     "path": "/Dosen/Teknik Informatika dan Komputer",
                     "attributes": {
-                        "description": "Akun Dosen untuk Jurusan Teknik Informatika dan Komputer",
+                        "descriptiones": "Akun Dosen untuk Jurusan Teknik Informatika dan Komputer",
                         "version": "1.0",
                         "short_unit_name": "TIK",
                         "unit_name": "Teknik Informatika dan Komputer"
@@ -146,7 +146,7 @@
                     "name": "Teknik Mesin",
                     "path": "/Dosen/Teknik Mesin",
                     "attributes": {
-                        "description": "Akun Dosen untuk Jurusan Teknik Mesin",
+                        "descriptiones": "Akun Dosen untuk Jurusan Teknik Mesin",
                         "version": "1.0",
                         "short_unit_name": "TM",
                         "unit_name": "Teknik Mesin"
@@ -156,7 +156,7 @@
                     "name": "Teknik Sipil",
                     "path": "/Dosen/Teknik Sipil",
                     "attributes": {
-                        "description": "Akun Dosen untuk Jurusan Teknik Sipil",
+                        "descriptiones": "Akun Dosen untuk Jurusan Teknik Sipil",
                         "version": "1.0",
                         "short_unit_name": "TS",
                         "unit_name": "Teknik Sipil"
@@ -168,7 +168,7 @@
             "name": "Alumni",
             "path": "/Alumni",
             "attributes": {
-                "description": "Group Untuk Akun Alumni",
+                "descriptiones": "Group Untuk Akun Alumni",
                 "version": "1.0",
                 "short_unit_name": "Alumni",
                 "unit_name": "Alumni"
@@ -178,7 +178,7 @@
                     "name": "Administrasi Niaga",
                     "path": "/Alumni/Administrasi Niaga",
                     "attributes": {
-                        "description": "Akun Alumni untuk Jurusan Administrasi Niaga",
+                        "descriptiones": "Akun Alumni untuk Jurusan Administrasi Niaga",
                         "version": "1.0",
                         "short_unit_name": "AN",
                         "unit_name": "Administrasi Niaga"
@@ -188,7 +188,7 @@
                     "name": "Akuntansi",
                     "path": "/Alumni/Akuntansi",
                     "attributes": {
-                        "description": "Akun Alumni untuk Jurusan Akuntansi",
+                        "descriptiones": "Akun Alumni untuk Jurusan Akuntansi",
                         "version": "1.0",
                         "short_unit_name": "AK",
                         "unit_name": "Akuntansi"
@@ -198,7 +198,7 @@
                     "name": "Teknik Elektro",
                     "path": "/Alumni/Teknik Elektro",
                     "attributes": {
-                        "description": "Akun Alumni untuk Jurusan Teknik Elektro",
+                        "descriptiones": "Akun Alumni untuk Jurusan Teknik Elektro",
                         "version": "1.0",
                         "short_unit_name": "TE",
                         "unit_name": "Teknik Elektro"
@@ -208,7 +208,7 @@
                     "name": "Teknik Grafika dan Penerbitan",
                     "path": "/Alumni/Teknik Grafika dan Penerbitan",
                     "attributes": {
-                        "description": "Akun Alumni untuk Jurusan Teknik Grafika dan Penerbitan",
+                        "descriptiones": "Akun Alumni untuk Jurusan Teknik Grafika dan Penerbitan",
                         "version": "1.0",
                         "short_unit_name": "TGP",
                         "unit_name": "Teknik Grafika dan Penerbitan"
@@ -218,7 +218,7 @@
                     "name": "Teknik Informatika dan Komputer",
                     "path": "/Alumni/Teknik Informatika dan Komputer",
                     "attributes": {
-                        "description": "Akun Alumni untuk Jurusan Teknik Informatika dan Komputer",
+                        "descriptiones": "Akun Alumni untuk Jurusan Teknik Informatika dan Komputer",
                         "version": "1.0",
                         "short_unit_name": "TIK",
                         "unit_name": "Teknik Informatika dan Komputer"
@@ -228,7 +228,7 @@
                     "name": "Teknik Mesin",
                     "path": "/Alumni/Teknik Mesin",
                     "attributes": {
-                        "description": "Akun Alumni untuk Jurusan Teknik Mesin",
+                        "descriptiones": "Akun Alumni untuk Jurusan Teknik Mesin",
                         "version": "1.0",
                         "short_unit_name": "TM",
                         "unit_name": "Teknik Mesin"
@@ -238,7 +238,7 @@
                     "name": "Teknik Sipil",
                     "path": "/Alumni/Teknik Sipil",
                     "attributes": {
-                        "description": "Akun Alumni untuk Jurusan Teknik Sipil",
+                        "descriptiones": "Akun Alumni untuk Jurusan Teknik Sipil",
                         "version": "1.0",
                         "short_unit_name": "TS",
                         "unit_name": "Teknik Sipil"
@@ -250,7 +250,7 @@
             "name": "Pimpinan",
             "path": "/Pimpinan",
             "attributes": {
-                "description": "Group Untuk Akun Pimpinan dan Staff nya",
+                "descriptiones": "Group Untuk Akun Pimpinan dan Staff nya",
                 "version": "1.0",
                 "short_unit_name": "Pimpinan",
                 "unit_name": "Pimpinan"
@@ -260,7 +260,7 @@
                     "name": "Direktur",
                     "path": "/Pimpinan/Direktur",
                     "attributes": {
-                        "description": "Akun direktur",
+                        "descriptiones": "Akun direktur",
                         "version": "1.0",
                         "short_unit_name": "Direktur",
                         "unit_name": "Direktur"
@@ -270,7 +270,7 @@
                     "name": "Staff Direktur",
                     "path": "/Pimpinan/Staff Direktur",
                     "attributes": {
-                        "description": "Akun Staff direktur",
+                        "descriptiones": "Akun Staff direktur",
                         "version": "1.0",
                         "short_unit_name": "Staff Direktur",
                         "unit_name": "Staff Direktur"
@@ -280,7 +280,7 @@
                     "name": "Staff Wakil Direktur",
                     "path": "/Pimpinan/Staff Wakil Direktur",
                     "attributes": {
-                        "description": "Akun Staff wakil direktur",
+                        "descriptiones": "Akun Staff wakil direktur",
                         "version": "1.0",
                         "short_unit_name": "Staff WD",
                         "unit_name": "Staff Wakil Direktur"
@@ -290,7 +290,7 @@
                     "name": "Wakil Direktur",
                     "path": "/Pimpinan/Wakil Direktur",
                     "attributes": {
-                        "description": "Akun wakil direktur",
+                        "descriptiones": "Akun wakil direktur",
                         "version": "1.0",
                         "short_unit_name": "WD",
                         "unit_name": "Wakil Direktur"
@@ -302,7 +302,7 @@
             "name": "Dosen",
             "path": "/Dosen",
             "attributes": {
-                "description": "Group Untuk Akun Dosen",
+                "descriptiones": "Group Untuk Akun Dosen",
                 "version": "1.0",
                 "short_unit_name": "Dosen",
                 "unit_name": "Dosen"
@@ -312,7 +312,7 @@
                     "name": "Administrasi Niaga",
                     "path": "/Dosen/Administrasi Niaga",
                     "attributes": {
-                        "description": "Akun Dosen untuk Jurusan Administrasi Niaga",
+                        "descriptiones": "Akun Dosen untuk Jurusan Administrasi Niaga",
                         "version": "1.0",
                         "short_unit_name": "AN",
                         "unit_name": "Administrasi Niaga"
@@ -322,7 +322,7 @@
                     "name": "Akuntansi",
                     "path": "/Dosen/Akuntansi",
                     "attributes": {
-                        "description": "Akun Dosen untuk Jurusan Akuntansi",
+                        "descriptiones": "Akun Dosen untuk Jurusan Akuntansi",
                         "version": "1.0",
                         "short_unit_name": "AK",
                         "unit_name": "Akuntansi"
@@ -332,7 +332,7 @@
                     "name": "Teknik Elektro",
                     "path": "/Dosen/Teknik Elektro",
                     "attributes": {
-                        "description": "Akun Dosen untuk Jurusan Teknik Elektro",
+                        "descriptiones": "Akun Dosen untuk Jurusan Teknik Elektro",
                         "version": "1.0",
                         "short_unit_name": "TE",
                         "unit_name": "Teknik Elektro"
@@ -342,7 +342,7 @@
                     "name": "Teknik Grafika dan Penerbitan",
                     "path": "/Dosen/Teknik Grafika dan Penerbitan",
                     "attributes": {
-                        "description": "Akun Dosen untuk Jurusan Teknik Grafika dan Penerbitan",
+                        "descriptiones": "Akun Dosen untuk Jurusan Teknik Grafika dan Penerbitan",
                         "version": "1.0",
                         "short_unit_name": "TGP",
                         "unit_name": "Teknik Grafika dan Penerbitan"
@@ -352,7 +352,7 @@
                     "name": "Teknik Informatika dan Komputer",
                     "path": "/Dosen/Teknik Informatika dan Komputer",
                     "attributes": {
-                        "description": "Akun Dosen untuk Jurusan Teknik Informatika dan Komputer",
+                        "descriptiones": "Akun Dosen untuk Jurusan Teknik Informatika dan Komputer",
                         "version": "1.0",
                         "short_unit_name": "TIK",
                         "unit_name": "Teknik Informatika dan Komputer"
@@ -362,7 +362,7 @@
                     "name": "Teknik Mesin",
                     "path": "/Dosen/Teknik Mesin",
                     "attributes": {
-                        "description": "Akun Dosen untuk Jurusan Teknik Mesin",
+                        "descriptiones": "Akun Dosen untuk Jurusan Teknik Mesin",
                         "version": "1.0",
                         "short_unit_name": "TM",
                         "unit_name": "Teknik Mesin"
@@ -372,7 +372,7 @@
                     "name": "Teknik Sipil",
                     "path": "/Dosen/Teknik Sipil",
                     "attributes": {
-                        "description": "Akun Dosen untuk Jurusan Teknik Sipil",
+                        "descriptiones": "Akun Dosen untuk Jurusan Teknik Sipil",
                         "version": "1.0",
                         "short_unit_name": "TS",
                         "unit_name": "Teknik Sipil"
@@ -384,7 +384,7 @@
             "name": "Staf",
             "path": "/Staf",
             "attributes": {
-                "description": "Group Untuk Akun Staf",
+                "descriptiones": "Group Untuk Akun Staf",
                 "version": "1.0",
                 "short_unit_name": "Staf",
                 "unit_name": "Staf"
@@ -394,7 +394,7 @@
                     "name": "Bagian Administrasi Jurusan",
                     "path": "/Staf/Bagian Administrasi Jurusan",
                     "attributes": {
-                        "description": "Akun staff untuk Administrasi Jurusan",
+                        "descriptiones": "Akun staff untuk Administrasi Jurusan",
                         "version": "1.0",
                         "short_unit_name": "Keamanan",
                         "unit_name": "Bagian Administrasi Jurusan"
@@ -404,7 +404,7 @@
                     "name": "Bagian Administrasi Umum",
                     "path": "/Staf/Bagian Administrasi Umum",
                     "attributes": {
-                        "description": "Akun staff untuk Bagian Administrasi Umum",
+                        "descriptiones": "Akun staff untuk Bagian Administrasi Umum",
                         "version": "1.0",
                         "short_unit_name": "Staff Umum",
                         "unit_name": "Bagian Administrasi Umum"
@@ -414,7 +414,7 @@
                     "name": "Bagian Akademik",
                     "path": "/Staf/Bagian Akademik",
                     "attributes": {
-                        "description": "Akun staff untuk Bagian Akademik (Untuk Akses Aplikasi Khusus Akademik)",
+                        "descriptiones": "Akun staff untuk Bagian Akademik (Untuk Akses Aplikasi Khusus Akademik)",
                         "version": "1.0",
                         "short_unit_name": "Akademik",
                         "unit_name": "Bagian Akademik"
@@ -424,7 +424,7 @@
                     "name": "Bagian Keamanan",
                     "path": "/Staf/Bagian Keamanan",
                     "attributes": {
-                        "description": "Akun staff untuk Bagian Keamanan",
+                        "descriptiones": "Akun staff untuk Bagian Keamanan",
                         "version": "1.0",
                         "short_unit_name": "Keamanan",
                         "unit_name": "Bagian Keamanan"
@@ -434,7 +434,7 @@
                     "name": "Bagian Kebersihan",
                     "path": "/Staf/Bagian Kebersihan",
                     "attributes": {
-                        "description": "Akun staff untuk Bagian Kebersihan",
+                        "descriptiones": "Akun staff untuk Bagian Kebersihan",
                         "version": "1.0",
                         "short_unit_name": "Kebersihan",
                         "unit_name": "Bagian Kebersihan"
@@ -444,7 +444,7 @@
                     "name": "Bagian Kepegawaian",
                     "path": "/Staf/Bagian Kepegawaian",
                     "attributes": {
-                        "description": "Akun staff untuk Bagian Kepegawaian (Untuk Akses Aplikasi Khusus Kepegawaian)",
+                        "descriptiones": "Akun staff untuk Bagian Kepegawaian (Untuk Akses Aplikasi Khusus Kepegawaian)",
                         "version": "1.0",
                         "short_unit_name": "Kepegawaian",
                         "unit_name": "Bagian Kepegawaian"
@@ -454,7 +454,7 @@
                     "name": "Bagian Keuangan",
                     "path": "/Staf/Bagian Keuangan",
                     "attributes": {
-                        "description": "Akun staff untuk Bagian Keuangan (Untuk Akses Aplikasi Khusus Keuangan)",
+                        "descriptiones": "Akun staff untuk Bagian Keuangan (Untuk Akses Aplikasi Khusus Keuangan)",
                         "version": "1.0",
                         "short_unit_name": "Keuangan",
                         "unit_name": "Bagian Keuangan"
@@ -466,7 +466,7 @@
             "name": "Tamu",
             "path": "/Tamu",
             "attributes": {
-                "description": "Group Untuk Tamu",
+                "descriptiones": "Group Untuk Tamu",
                 "version": "1.0",
                 "short_unit_name": "Tamu",
                 "unit_name": "Tamu"
@@ -476,7 +476,7 @@
             "name": "Administrator",
             "path": "/Administrator",
             "attributes": {
-                "description": "Group Untuk Akun Administrator Unit TI Politeknik Negeri Jakarta",
+                "descriptiones": "Group Untuk Akun Administrator Unit TI Politeknik Negeri Jakarta",
                 "version": "1.0",
                 "short_unit_name": "Admin",
                 "unit_name": "Admin"
