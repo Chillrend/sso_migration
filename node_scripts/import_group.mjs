@@ -1,6 +1,7 @@
-import KcAdminClient from '@keycloak/keycloak-admin-client';
+import KcAdminClient from '@keycloak/keycloak-admin-client'
 import * as dotenv from 'dotenv';
 import groups from './groups.json' assert {type: "json"}
+import {Groups} from "@keycloak/keycloak-admin-client/lib/resources/groups";
 
 dotenv.config({path: '../.env'});
 
@@ -21,5 +22,12 @@ kcAdminClient.setConfig({
     realmName: process.env.KC_REALMS
 })
 
-const testing = await kcAdminClient.users.count();
-console.log(groups)
+const groupObject = groups.groups
+
+for (let i = 0; i < groupObject.length; i++) {
+
+}
+
+const createKcGroupRecursively = (group, kcClient, parentName) => {
+
+}
