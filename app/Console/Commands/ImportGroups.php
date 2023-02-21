@@ -10,6 +10,7 @@ use Fschmtt\Keycloak\Representation\Group;
 use GuzzleHttp\Exception\ClientException;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
+use Keycloak\Admin\KeycloakClient;
 
 class ImportGroups extends Command
 {
@@ -31,7 +32,7 @@ class ImportGroups extends Command
      * Execute the console command.
      *
      * @return int
-     */
+
 
     public function handle()
     {
@@ -56,6 +57,15 @@ class ImportGroups extends Command
         $this->info('Connected to realm ' . config('app.keycloak_realms'));
         $this->importGroupToKc($keycloak);
     }
+     */
+
+    public function handle()
+    {
+        $client = KeycloakInstance::getKeycloakInstanceWaleed();
+        $this->info("Connected to KC Instance: Keycloak " . $client->getVersion());
+
+        $this->importGroupToKcWaleed($client);
+    }
 
     public function importGroupToKc(Keycloak $keycloak){
         $groups = File::get(base_path() . '/node_scripts/groups.json');
@@ -79,5 +89,15 @@ class ImportGroups extends Command
         $groups = $keycloak->groups()->all(config('app.keycloak_realms'));
         $this->info(sprintf('Realm "%s" has the following groups:%s', config('app.keycloak_realms'), PHP_EOL));
 
+    }
+
+    public function importGroupToKcWaleed(KeycloakClient $client){
+        $groups = File::get(base_path() . '/node_scripts/groups.json');
+        $raw = json_decode($groups);
+
+        $groups = $raw->groups;
+        $this->info(json_encode($groups));
+
+        $response = $client->createGroup($groups);
     }
 }

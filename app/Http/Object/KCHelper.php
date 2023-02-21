@@ -29,11 +29,16 @@ class KCHelper
         ]);
 
         return new Group(
-            attributes: null,
+            attributes: $attributes,
             name: $groupObject->name,
             path: $groupObject->path,
             subGroups: property_exists($groupObject, 'sub_groups') ? new GroupCollection($subGroupAppend) : null,
         );
+    }
+
+    public static function buildKcGroupRecursivelyWaleed(): \stdClass {
+
+        return new \stdClass();
     }
 
 }

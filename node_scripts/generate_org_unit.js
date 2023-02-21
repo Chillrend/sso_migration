@@ -25,7 +25,7 @@ org_units.forEach((unit) => {
                 name: unit.name_long,
                 path: "/".concat(types).concat("/").concat(unit.name_long),
                 attributes: {
-                    descriptiones: format(unit.description, types),
+                    description: format(unit.description, types),
                     version: "1.0",
                     short_unit_name: unit.name_short,
                     unit_name: unit.name_long
@@ -50,7 +50,7 @@ org_units.forEach((unit) => {
             name: unit.name_long,
             path: pimpinan_groups.path.concat("/").concat(unit.name_long),
             attributes: {
-                descriptiones: unit.description,
+                description: unit.description,
                 version: "1.0",
                 short_unit_name: unit.name_short,
                 unit_name: unit.name_long
@@ -62,7 +62,7 @@ org_units.forEach((unit) => {
             name: unit.name_long,
             path: staf_groups.path.concat("/").concat(unit.name_long),
             attributes: {
-                descriptiones: unit.description,
+                description: unit.description,
                 version: "1.0",
                 short_unit_name: unit.name_short,
                 unit_name: unit.name_long
