@@ -25,22 +25,22 @@ org_units.forEach((unit) => {
                 name: unit.name_long,
                 path: "/".concat(types).concat("/").concat(unit.name_long),
                 attributes: {
-                    description: format(unit.description, types),
-                    version: "1.0",
-                    short_unit_name: unit.name_short,
-                    unit_name: unit.name_long
+                    description: [format(unit.description, types)],
+                    version: ["1.0"],
+                    short_unit_name: [unit.name_short],
+                    unit_name: [unit.name_long]
                 },
             }
 
             switch (types) {
                 case "Mahasiswa":
-                    mahasiswa_groups.sub_groups.push(jurusan);
+                    mahasiswa_groups.subGroups.push(jurusan);
                     break;
                 case "Dosen":
-                    dosen_groups.sub_groups.push(jurusan);
+                    dosen_groups.subGroups.push(jurusan);
                     break;
                 case "Alumni":
-                    alumni_groups.sub_groups.push(jurusan);
+                    alumni_groups.subGroups.push(jurusan);
                     break;
             }
 
@@ -50,25 +50,25 @@ org_units.forEach((unit) => {
             name: unit.name_long,
             path: pimpinan_groups.path.concat("/").concat(unit.name_long),
             attributes: {
-                description: unit.description,
-                version: "1.0",
-                short_unit_name: unit.name_short,
-                unit_name: unit.name_long
+                description: [unit.description],
+                version: ["1.0"],
+                short_unit_name: [unit.name_short],
+                unit_name: [unit.name_long]
             },
         }
-        pimpinan_groups.sub_groups.push(unit_pimpinan);
+        pimpinan_groups.subGroups.push(unit_pimpinan);
     }else if(unit.parents === "Staf"){
         let staf = {
             name: unit.name_long,
             path: staf_groups.path.concat("/").concat(unit.name_long),
             attributes: {
-                description: unit.description,
-                version: "1.0",
-                short_unit_name: unit.name_short,
-                unit_name: unit.name_long
+                description: [unit.description],
+                version: ["1.0"],
+                short_unit_name: [unit.name_short],
+                unit_name: [unit.name_long]
             },
         }
-        staf_groups.sub_groups.push(staf);
+        staf_groups.subGroups.push(staf);
     }
 })
 
