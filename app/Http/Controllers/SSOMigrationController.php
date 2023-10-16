@@ -40,22 +40,10 @@ class SSOMigrationController extends Controller
 
     public function check()
     {
-        $keycloak = KeycloakInstance::getKeycloakInstanceWaleed();
+        $client = KeycloakInstance::getKeycloakInstance();
 
-        $serverInfo = $keycloak->serverInfo()->get();
+        dd($client->serverInfo()->get());
 
-        echo sprintf(
-            'Keycloak %s is running on %s/%s (%s) with %s/%s since %s and is currently using %s of %s (%s %%) memory.',
-            $serverInfo->getSystemInfo()->getVersion(),
-            $serverInfo->getSystemInfo()->getOsName(),
-            $serverInfo->getSystemInfo()->getOsVersion(),
-            $serverInfo->getSystemInfo()->getOsArchitecture(),
-            $serverInfo->getSystemInfo()->getJavaVm(),
-            $serverInfo->getSystemInfo()->getJavaVersion(),
-            $serverInfo->getSystemInfo()->getUptime(),
-            $serverInfo->getMemoryInfo()->getUsedFormated(),
-            $serverInfo->getMemoryInfo()->getTotalFormated(),
-            100 - $serverInfo->getMemoryInfo()->getFreePercentage(),
-        );
+        return response()->json($client->serverInfo());
     }
 }
