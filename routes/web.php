@@ -15,3 +15,5 @@ use App\Http\Controllers\SSOMigrationController;
 */
 
 Route::get('/', [SSOMigrationController::class, 'render']);
+Route::post('/verify', [SSOMigrationController::class, 'verifyUser']);
+Route::get('/check', [SSOMigrationController::class, 'check']);

@@ -2,7 +2,7 @@
     <x-slot name="title">{{__('migration.step1Title')}}</x-slot>
     <x-slot name="message">{{__('migration.step1Msg')}}</x-slot>
 
-    <form action="#" class="m-0 space-y-4" method="post">
+    <form action="/verify" class="m-0 space-y-4" method="post">
         @csrf
         <div>
             <label class="sr-only" for="username">
