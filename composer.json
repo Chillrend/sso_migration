@@ -6,12 +6,12 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
-        "fschmtt/keycloak-rest-api-client-php": "^0.12.0",
+        "fschmtt/keycloak-rest-api-client-php": "^0.15.0",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "mohammad-waleed/keycloak-admin-client": "^0.35.0"
+        "mohammad-waleed/keycloak-admin-client": "^0.37.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
